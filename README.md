@@ -1,2 +1,2 @@
-# product-card
+# edd
 Something went wrong from the beginning))
