@@ -1,0 +1,98 @@
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  color: #515076;
+}
+
+.title {
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 78px;
+  margin-top: 220px;
+  text-align: center;
+  margin-bottom: 110px;
+}
+
+.container {
+  background-image: url('../images/background-dandelion.png');
+  background-repeat: no-repeat;
+  background-position: 275px 0;
+}
+
+.product-card {
+  width: 340px;
+  padding: 25px;
+  background-color: #F7F7FA;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.product-card__subtitle {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  list-style: none;
+  padding: 408px 85px 116px 85px;
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.img-product {
+  width: 290px;
+  height: 245px;
+  display: block;
+}
+
+.product-card__title {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.product-card__description {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  min-height: 36px;
+}
+
+.product-card__composition {
+  font-size: 13px;
+  line-height: 18px;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+.product-card__composition-title {
+  font-size: 13px;
+  line-height: 18px;
+  padding-left: 0;
+}
+
+.product-card__price {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.price-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.price-value {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
