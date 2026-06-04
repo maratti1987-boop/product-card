@@ -1,8 +1,15 @@
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: Montserrat, sans-serif;
   font-size: 13px;
   color: #515076;
+  background-image: url('../images/background-dandelion.png');
+  background-repeat: no-repeat;
+   background-position: 290px 0;
 }
 
 .title {
@@ -14,10 +21,13 @@ body {
   margin-bottom: 110px;
 }
 
-.container {
-  background-image: url('../images/background-dandelion.png');
-  background-repeat: no-repeat;
-  background-position: 275px 0;
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .product-card {
@@ -26,7 +36,6 @@ body {
   background-color: #F7F7FA;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 .product-card__subtitle {
@@ -34,17 +43,6 @@ body {
   line-height: 24px;
   text-transform: uppercase;
   margin-top: 30px;
-}
-
-.product-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 45px;
-  list-style: none;
-  padding: 408px 85px 116px 85px;
-  max-width: 1280px;
-  margin: 0 auto;
-  justify-content: center;
 }
 
 .img-product {
@@ -76,7 +74,6 @@ body {
 .product-card__composition-title {
   font-size: 13px;
   line-height: 18px;
-  padding-left: 0;
 }
 
 .product-card__price {
