@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: Montserrat, sans-serif;
   font-size: 13px;
   color: #515076;
   background-image: url('../images/background-dandelion.png');
   background-repeat: no-repeat;
-   background-position: 290px 0;
+  background-position: 290px 0;
 }
 
 .title {
