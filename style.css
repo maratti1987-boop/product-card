@@ -8,12 +8,14 @@ body {
   font-family: Montserrat, sans-serif;
   font-size: 13px;
   color: #515076;
-  background-image: url('../images/background-dandelion.png');
-  background-repeat: no-repeat;
-  background-position: 290px 0;
 }
 
-.title {
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.catalog__title {
   font-size: 70px;
   font-weight: 400;
   line-height: 78px;
@@ -22,7 +24,28 @@ body {
   margin-bottom: 110px;
 }
 
-.product-list {
+.catalog__container{
+  background-image: url('../images/background-dandelion.png');
+  background-repeat: no-repeat;
+  background-position: 90px 0;
+  padding-top: 1px;
+} 
+
+.clear-list {
+  list-style: none;
+  padding:0;
+  margin:0;
+} 
+
+.card {
+  width: 340px;
+  padding: 25px;
+  background-color: #F7F7FA;
+  display: flex;
+  flex-direction: column;
+}
+
+.products{
   display: flex;
   flex-wrap: wrap;
   gap: 45px;
@@ -31,66 +54,56 @@ body {
   justify-content: center;
 }
 
-.product-card {
-  width: 340px;
-  padding: 25px;
-  background-color: #F7F7FA;
+.products__item {
   display: flex;
   flex-direction: column;
+  width: 340px;
 }
 
-.product-card__subtitle {
+.card__category {
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
   margin-top: 30px;
+  color: #A5A3B9;
 }
 
-.img-product {
+.card__image {
   width: 290px;
   height: 245px;
   display: block;
 }
 
-.product-card__title {
+.card__name {
   font-size: 20px;
   line-height: 27px;
   font-weight: 700;
   margin-top: 5px;
 }
 
-.product-card__description {
+.card__description {
   margin-top: 5px;
   margin-bottom: 15px;
   min-height: 36px;
 }
 
-.product-card__composition {
+.card__compound {
   font-size: 13px;
   line-height: 18px;
   padding-left: 12px;
   margin-bottom: 20px;
 }
 
-.product-card__composition-title {
+.compound__name {
   font-size: 13px;
   line-height: 18px;
 }
 
-.product-card__price {
+.card__price {
   display: flex;
   margin-top: 25px;
   justify-content: space-between;
+  font-size: 20px;
+  height: 24px;
 }
 
-.price-label {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.price-value {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-}
