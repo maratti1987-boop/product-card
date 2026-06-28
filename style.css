@@ -29,13 +29,13 @@ body {
   background-repeat: no-repeat;
   background-position: 90px 0;
   padding-top: 1px;
-} 
+}
 
 .clear-list {
   list-style: none;
   padding:0;
   margin:0;
-} 
+}
 
 .card {
   width: 340px;
@@ -107,3 +107,10 @@ body {
   height: 24px;
 }
 
+.color-toggle-button {
+  background-color: #008b8b;
+}
+
+.color-toggle-button--active {
+  background-color: #ffff00;
+}
