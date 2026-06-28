@@ -21,12 +21,13 @@ changeFirstCardColorButton.addEventListener('click', () => {
 const openGoogleButton = document.querySelector('#open-google-button');
 openGoogleButton.addEventListener('click', openGoogle);
 
-function openGoogle(){
+function openGoogle() {
   const answer = confirm('Вы хотите открыть Google?');
   if (answer === true) {
     window.open('https://www.google.com');
-  } else {return;
-}
+  } else {
+    return;
+  }
 }
 
 // Вывод сообщения в консоль
@@ -37,7 +38,7 @@ outputConsoleLogButton.addEventListener('click', () => {
 });
 
 function outputConsoleLog(message) {
-  alert(message)
+  alert(message);
   console.log(message);
 }
 
@@ -55,5 +56,5 @@ title.addEventListener('mouseenter', () => {
 const colorToggleButton = document.querySelector('#color-toggle-button');
 
 colorToggleButton.addEventListener('click', () => {
-   colorToggleButton.classList.toggle('color-toggle-button--active');
+  colorToggleButton.classList.toggle('color-toggle-button--active');
 });
