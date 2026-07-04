@@ -1,10 +1,10 @@
 
 // Температура в Каире
 
-function askTemperature(city, temperature) {
+function showTemperature(city, temperature) {
   console.log(`Сейчас в ${city} температура - ${temperature} градусов по Цельсию.`);
 }
-askTemperature("Каире", 25);
+showTemperature("Каире", 25);
 
 
 // Скорость света
