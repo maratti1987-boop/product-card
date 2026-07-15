@@ -84,23 +84,23 @@ console.log(bookList)
 
 const americanBooks = [
   {
-  author: "Jack London",
-  title : "White Fang ",
-  year: 1906,
-  genre: "Novel",
+    author: "Jack London",
+    title : "White Fang ",
+    year: 1906,
+    genre: "Novel",
   },
   {
-  author: "Jack London",
-  title : "Martin Eden",
-  year: 1909,
-  genre: "Novel"
+    author: "Jack London",
+    title : "Martin Eden",
+    year: 1909,
+    genre: "Novel"
   },
   {
-  author: "Jack London",
-  title : "The Sea-Wolf ",
-  year: 1904,
-  genre: "Novel"
-}
+    author: "Jack London",
+    title : "The Sea-Wolf ",
+    year: 1904,
+    genre: "Novel"
+  }
 ];
 
 const allBooks = [...bookList, ...americanBooks];
