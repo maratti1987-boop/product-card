@@ -32,11 +32,11 @@ console.log(comEmailComment);
 
 // 8. User's id
 
-const idUser = commentsList.map(comment => ({
+const updatedCommentsPostId = commentsList.map(comment => ({
   ...comment,
   postId: comment.id <= 5 ? 2 : 1
 }));
-console.log(idUser);
+console.log(updatedCommentsPostId);
 
 // 9. objects contain an ID and a name
 
@@ -56,14 +56,14 @@ console.log(updatedComments);
 
 // 11. Use reduce and map arrays
 
-const emailsReduce = commentsList.reduce((acc, comment) => {
+const emailsByReduce = commentsList.reduce((acc, comment) => {
   acc.push(comment.email);
   return acc;
 }, []);
-console.log(emailsReduce);
+console.log(emailsByReduce);
 
-const emailsMap = commentsList.map(comment => comment.email);
-console.log(emailsMap);
+const emailsByMap = commentsList.map(comment => comment.email);
+console.log(emailsByMap);
 
 // 12. Use toString and join methods
 
