@@ -11,8 +11,8 @@ console.log (filteredNumbers); // [5, 6, 7, 8, 9, 10]
 // 3. Create an array of strings.
 
 const carBrands = ["KIA", "Toyota", "Honda", "Ford", "Chevrolet"];
-const koreaBrand = carBrands.includes("KIA");
-console.log(koreaBrand); // true
+const isKoreaBrand = carBrands.includes("KIA");
+console.log(isKoreaBrand);
 
 
 // 4. Write a function that takes an array as an argument and reverses its order.
@@ -27,8 +27,8 @@ console.log(reversedNumbers); // [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
 // 7. user's email contains ".com"
  
-const comUser = commentsList.filter (comment => comment.email.includes(".com"))
-console.log(comUser);
+const comEmailComment = commentsList.filter (comment => comment.email.includes(".com"))
+console.log(comEmailComment);
 
 // 8. User's id
 
