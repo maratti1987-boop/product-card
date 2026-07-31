@@ -1,28 +1,9 @@
+
+
 import { productsList } from "./products.js";
 
 const productTemplate = document.getElementById('product-template')
 const productsContainer = document.querySelector('.products');
-
-productsList.forEach(product => {
-  const productClone = productTemplate.content.cloneNode(true);
-
-  productClone.querySelector('.card__image').src = product.image; 
-  productClone.querySelector('.card__image').alt = product.name;
-  productClone.querySelector('.card__category').textContent = product.category;
-  productClone.querySelector('.card__name').textContent = product.name;
-  productClone.querySelector('.card__description').textContent = product.description;
-
-  const compoundList = productClone.querySelector(".compound__list");
-  product.compound.forEach(item => {
-    const li = document.createElement("li");
-    li.textContent = item;
-    compoundList.appendChild(li);
-  });
-
-  productClone.querySelector('.card__price span').textContent = `${product.price} ₽`;
-
-  productsContainer.appendChild(productClone);
-});
 
 // 4. Use a reduce method
 
@@ -42,7 +23,7 @@ function getCardsCount() {
     return Number(count);
   } else {
     alert("Введите число от 1 до 5!");
-    return getCardsCount(); // спрашиваем снова
+    return getCardsCount(); 
   }
 }
 
@@ -54,7 +35,7 @@ function renderCards(products, count) {
   products.slice(0, count).forEach(product => {
     const productClone = productTemplate.content.cloneNode(true);
 
-    productClone.querySelector('.card__image').src = product.image;
+    productClone.querySelector('.card__image').src = `images/${product.image}.png`;
     productClone.querySelector('.card__image').alt = product.name;
     productClone.querySelector('.card__category').textContent = product.category;
     productClone.querySelector('.card__name').textContent = product.name;
@@ -73,6 +54,5 @@ function renderCards(products, count) {
   });
 }
 
-const count = getCardsCount();
-renderCards(productsList, count);
+renderCards(productsList, getCardsCount());
 
