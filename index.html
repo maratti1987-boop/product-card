@@ -46,10 +46,128 @@
       </template>
     </div>
   </main>
+  <!--
   <script src="js/main.js"></script>
   <script src="js/homework-7.js"></script>
   <script src="js/homework-8.js"></script>
   <script type="module" src="js/homework-9.js"></script>
+      -->
   <script type="module" src="js/homework-10.js"></script>
+  <script type="module" src="js/homework-11.js"></script>
+
+  <footer class="footer">
+
+    <div class="footer__top">
+
+      <div class="footer__brand">
+        <h2 class="footer__brand-title">Product Card</h2>
+        <p class="footer__brand-description">У нас самые лучшие продукты для кожи!</p>
+
+        <div class="footer__social">
+          <a class="footer__social-link" href="#" target="_blank" rel="noopener">
+            <img src="Images/Telegram img.png" alt="Telegram">
+          </a>
+
+          <a class="footer__social-link" href="#" target="_blank" rel="noopener">
+            <img src="Images/VK img.png" alt="VK">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__subscribe">
+        <h3 class="footer__subscribe-title">Подпишись на наши акции</h3>
+
+        <form id="subscribe-form">
+          <label for="emailInput">Email</label>
+          <input class="footer__subscribe-input"
+            type="email" 
+            id="emailInput" 
+            name="email" 
+            placeholder="Введи Email..." 
+            required>
+          <button class="footer__subscribe-button" 
+            type="submit">Подписаться</button>
+        </form>
+      </div>
+
+      <nav class="footer__nav">
+        <h3 class="footer__nav-title">Быстрые ссылки</h3>
+        <ul class="footer__list">
+          <li class="footer__list-item"><a href="#">Главная</a></li>
+          <li class="footer__list-item"><a href="#">Магазин</a></li>
+          <li class="footer__list-item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__bottom-text">www.product-cards.com © all right reserve</p>
+    </div>
+  </footer>
+
+  <button id="openModalBtn" class="footer__register-btn">Регистрация</button>
+
+  <div class="overlay" id="overlay"></div>
+  <div class="modal" id="modal">
+
+    <button class="modal__close" id="closeModalBtn">×</button>
+
+    <h2 class="modal__title">Регистрация</h2>
+    <form class="modal__form" id="registrationForm">
+      
+      <label for="firstName">Имя</label>
+      <input 
+        type="text" 
+        id="firstName" 
+        name="firstName"
+        placeholder="Введите имя"
+        required>
+
+      <label for="lastName">Фамилия</label>
+      <input 
+        type="text" 
+        id="lastName" 
+        name="lastName"
+        placeholder="Введите фамилию"
+        required>
+
+      <label for="birthDate">Дата рождения</label>
+      <input 
+        type="date" 
+        id="birthDate" 
+        name="birthDate"
+        required>
+
+      <label for="login">Логин</label>
+      <input 
+        type="text" 
+        id="login"
+        name="login"
+        placeholder="Введите логин"
+        required>
+
+      <label for="password">Пароль</label>
+      <input 
+        type="password" 
+        id="password" 
+        name="password" 
+        placeholder="Введите пароль"
+        required
+        minlength="6">
+
+      <label for="repeatPassword">Повторите пароль</label>
+      <input
+        type="password"
+        id="repeatPassword"
+        name="repeatPassword"
+        placeholder="Повторите пароль"
+        required
+        minlength="6"
+      >
+
+      <button type="submit">Зарегистрироваться</button>
+    
+    </form>
+  </div>
 </body>
 </html>
