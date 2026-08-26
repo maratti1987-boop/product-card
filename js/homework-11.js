@@ -1,12 +1,12 @@
 // Уровень 1: задание 4
 
 const form = document.getElementById("subscribe-form");
-const emailInput = document.getElementById("emailInput");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const email = emailInput.value.trim();
+  const formData = new FormData(form);
+  const email = formData.get("email");
   if (!email) {
     console.log("Ошибка: email пустой");
     return;
