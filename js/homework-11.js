@@ -60,14 +60,8 @@ registrationForm.addEventListener("submit", (event) => {
     return;
   }
 
-  user = {
-    firstName: formData.get("firstName"),
-    lastName: formData.get("lastName"),
-    birthDate: formData.get("birthDate"),
-    login: formData.get("login"),
-    password: password,
-    createdOn: new Date()
-  };
+  const user = Object.fromEntries(formData.entries());
+  user.createdOn = new Date();
 
   console.log("Регистрация успешна:", user);
 
