@@ -22,8 +22,8 @@ function reverseArray(arr) {
 }
 const reversedCarBrands = reverseArray(carBrands);
 const reversedNumbers = reverseArray(numbers);
-console.log(reversedCarBrands); // ["Chevrolet", "Ford", "Honda", "Toyota", "KIA"]
-console.log(reversedNumbers); // [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+console.log(reversedCarBrands);
+console.log(reversedNumbers); 
 
 // 7. user's email contains ".com"
  
@@ -50,7 +50,7 @@ console.log(shortUsers);
 
 const updatedComments = commentsList.map(comment => ({
   ...comment,
-  isInvalid: comment.body.lenght > 180
+  isInvalid: comment.body.length > 180
 }));
 console.log(updatedComments);
 
@@ -67,8 +67,8 @@ console.log(emailsByMap);
 
 // 12. Use toString and join methods
 
-const stringToString = emailsReduce.toString();
+const stringToString = emailsByReduce.toString();
 console.log(stringToString);
 
-const stringJoin = emailsReduce.join(" * ");
+const stringJoin = emailsByReduce.join(" * ");
 console.log(stringJoin);
