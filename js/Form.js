@@ -1,5 +1,5 @@
 export class Form {
-  constructor(id) {
+  constructor (id) {
     this.id = id;
     this.form = document.getElementById(this.id);
 
@@ -8,7 +8,7 @@ export class Form {
     }
   }
 
-  getValues() {
+  getValues () {
     const formData = new FormData(this.form);
     const values = {};
     for (const [key, value] of formData.entries()) {
@@ -17,11 +17,11 @@ export class Form {
     return values;
   }
 
-  isValid() {
+  isValid () {
     return this.form.checkValidity();
   }
 
-  reset() {
+  reset () {
     this.form.reset();
   }
 }

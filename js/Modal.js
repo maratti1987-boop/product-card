@@ -1,5 +1,5 @@
 export class Modal {
-  constructor(id) {
+  constructor (id) {
     this.id = id;
     this.modal = document.getElementById(this.id);
 
@@ -10,19 +10,19 @@ export class Modal {
     this.#initCloseListener();
   }
 
-  open() {
+  open () {
     this.modal.classList.add('modal-showed');
   }
 
-  close() {
+  close () {
     this.modal.classList.remove('modal-showed');
   }
 
-  isOpen() {
+  isOpen () {
     return this.modal.classList.contains('modal-showed');
   }
 
-  #initCloseListener() {
+  #initCloseListener () {
     const closeButton = this.modal.querySelector('.close-modal-btn');
     if (closeButton) {
       closeButton.addEventListener('click', () => {
