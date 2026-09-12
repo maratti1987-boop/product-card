@@ -57,7 +57,6 @@ tea.setTemperature(83);
 // console.log(tea.getInfo());
 
 
-
 class Coffee extends Drink {
   constructor(name, size, price, beanType, milkType) {
     super(name, size, price);
@@ -70,6 +69,11 @@ class Coffee extends Drink {
       return `${super.getInfo()}, Зерно: ${this.beanType}, Молоко: ${this.milkType}`;
     }
 }
+
+const coffee = new Coffee('Латэ', '300 мл', '249', 'Арабика', 'Кокосовое')
+coffee.setTemperature(80);
+
+// console.log(coffee.getInfo());
 
 
 class Lemonade extends Drink {
@@ -84,3 +88,28 @@ class Lemonade extends Drink {
     return `${super.getInfo()}, Вкус: ${this.flavor}, Газированный: ${this.sparkling ? 'Да' : 'Нет'}`;
   }
 }
+
+
+// Кафе
+
+class Cafe {
+  constructor(name, location) {
+    this.name = name;
+    this.location = location;
+  }
+
+  getInfo() {
+    return `Кафе: ${this.name}, адрес: ${this.location}`;
+  }
+
+  orderDrink(drink) {
+    console.log(`Заказ принят: ${drink.name}`);
+    drink.serveDrink();
+  }
+}
+
+const cafe = new Cafe('Steak House', 'ул. Шашина, 10');
+
+console.log(cafe.getInfo());
+
+cafe.orderDrink(tea);
