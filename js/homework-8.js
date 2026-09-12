@@ -39,11 +39,11 @@ function checkMaxSpeed(carData) {
 }
 checkMaxSpeed(carData);
 
-console.log(carData.maxSpeed)
+// console.log(carData.maxSpeed)
 
 // 6.Create a function with two parameters: an object and a property name.
 function showCarInfo(object, property) {
-  console.log(object[property]);
+// console.log(object[property]);
 }
 
 showCarInfo(carData, "brand");
@@ -78,7 +78,7 @@ bookList.push({
   year: 1965
 })
 
-console.log(bookList)
+// console.log(bookList)
 
 // 9. Create another array consisting of movies
 
@@ -105,7 +105,7 @@ const americanBooks = [
 
 const allBooks = [...bookList, ...americanBooks];
 
-console.log(allBooks);
+// console.log(allBooks);
 
 // 10. 
 
@@ -116,4 +116,4 @@ const updatedBooks = allBooks.map(book => {
   };
 });
 
-console.log(updatedBooks)
+// console.log(updatedBooks)
