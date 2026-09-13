@@ -1,13 +1,8 @@
 
-// Температура в Каире
-
 function showTemperature(city, temperature) {
   console.log(`Сейчас в ${city} температура - ${temperature} градусов по Цельсию.`);
 }
-// showTemperature("Каире", 25);
 
-
-// Скорость света
 
 const SPEED_OF_LIGHT = 299792458 ;
 
@@ -21,12 +16,6 @@ function checkSpeedOfLight(speed) {
   }
 }
 
-// checkSpeedOfLight(300000000);
-// checkSpeedOfLight(200000000);
-// checkSpeedOfLight(299792458);
-
-
-// Приобретаем товар 
 
 const product = "Лыжи";
 const price = 1000;
@@ -40,17 +29,9 @@ function buyProduct (budget) {
   }
 }
 
-// buyProduct(1500);
-// buyProduct(800);
-
-
-//Создание функции для расчета зарплаты
 
 function calculateSalary(base = 2000, bonus = 500) {
-// console.log(`Ваш оклад: ${base} $`);
-// console.log(`Ваша премия: ${bonus} $`);
 const totalSalary = base + bonus;
-// console.log(`Ваша зарплата: ${totalSalary} $`);
 }
 
 calculateSalary();

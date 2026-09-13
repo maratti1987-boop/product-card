@@ -54,7 +54,7 @@ class Tea extends Drink {
 const tea = new Tea('Зеленый чай', '300 мл', 150,'Сенча', true);
 tea.setTemperature(83);
 
-// console.log(tea.getInfo());
+
 
 
 class Coffee extends Drink {
@@ -73,7 +73,7 @@ class Coffee extends Drink {
 const coffee = new Coffee('Латэ', '300 мл', '249', 'Арабика', 'Кокосовое')
 coffee.setTemperature(80);
 
-// console.log(coffee.getInfo());
+
 
 
 class Lemonade extends Drink {
@@ -90,7 +90,6 @@ class Lemonade extends Drink {
 }
 
 
-// Кафе
 
 class Cafe {
   constructor(name, location) {
